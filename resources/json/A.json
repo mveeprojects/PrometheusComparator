@@ -1,0 +1,34 @@
+{
+  "status": "success",
+  "data": {
+    "activeTargets": [
+      {
+        "discoveredLabels": {
+          "__address__": "cadvisor:8080",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "15s",
+          "__scrape_timeout__": "10s",
+          "job": "cadvisor"
+        },
+        "labels": {
+          "instance": "cadvisor:8080",
+          "job": "cadvisor"
+        },
+        "scrapePool": "cadvisor",
+        "scrapeUrl": "http://cadvisor:8080/metrics",
+        "globalUrl": "http://cadvisor:8080/metrics",
+        "lastError": "",
+        "lastScrape": "2025-05-28T22:16:14.552184006Z",
+        "lastScrapeDuration": 0.01920775,
+        "health": "up",
+        "scrapeInterval": "15s",
+        "scrapeTimeout": "10s"
+      }
+    ],
+    "droppedTargets": [],
+    "droppedTargetCounts": {
+      "cadvisor": 0
+    }
+  }
+}
