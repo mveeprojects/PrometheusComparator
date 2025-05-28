@@ -11,17 +11,18 @@ Using [cAdvisor](https://github.com/google/cadvisor) as a prometheus scrape targ
 
 ### Running the example locally
 
-Run cAdvisor and prometheus containers using docker compose:
-```shell
-docker compose down && docker compose up -d
-````
-
-To check local json files (in resources/json/):
+**To check local json files (in resources/json/):**
 ```shell
 ./compare.sh localjson resources/json/A.json resources/json/B.json
 ```
 
-Or to check two prometheus instances:
+**Or to check two prometheus instances:**
+
+Run cAdvisor and prometheus containers using docker compose:
+```shell
+docker compose down && docker compose up -d
+````
+Then run the comparison script:
 ```shell
 ./compare.sh prometheus http:localhost:9090 http://localhost:9091
 ```
