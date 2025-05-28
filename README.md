@@ -9,7 +9,7 @@ Using [cAdvisor](https://github.com/google/cadvisor) as a prometheus scrape targ
   * Ubuntu/Debian: `sudo apt-get install colordiff`
   * OS X: `brew install colordiff` or `port install colordiff`
 
-### Runninn the example locally
+### Running the example locally
 
 Run cAdvisor and prometheus containers using docker compose:
 ```shell
