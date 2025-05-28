@@ -26,6 +26,24 @@ Or to check two prometheus instances:
 ./compare.sh prometheus http:localhost:9090 http://localhost:9091
 ```
 
+### Example output 
+
+```shell
+./compare.sh prometheus http://localhost:9090 http://localhost:9091
+Comparing Prometheus A and B targets configuration (/api/v1/targets)...
+20,21c20,21
+<         "lastScrape": "2025-05-28T23:05:44.540038214Z",
+<         "lastScrapeDuration": 0.018338125,
+---
+>         "lastScrape": "2025-05-28T23:05:50.777035883Z",
+>         "lastScrapeDuration": 0.014861542,
+Comparing Prometheus A and B alerts (/api/v1/alerts)...
+Comparing Prometheus A and B config (/api/v1/status/config)...
+Comparing Prometheus A and B rules (/api/v1/rules)...
+Comparing Prometheus A and B metadata (/api/v1/metadata)...
+```
+
+
 ### Sources
 * [Medium: Docker Container Monitoring with cAdvisor, Prometheus, and Grafana using Docker Compose](https://medium.com/@sohammohite/docker-container-monitoring-with-cadvisor-prometheus-and-grafana-using-docker-compose-b47ec78efbc).
 * [SO: Using jq or alternative command line tools to compare JSON files](https://stackoverflow.com/a/37175540/3059314).
